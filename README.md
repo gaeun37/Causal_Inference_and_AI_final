@@ -205,4 +205,7 @@ Tested with Python 3.10+
 
 ---
 
+## 9. Final Report
 
+최종 보고서는 LMS에 별도 제출한다.
+이 repository는 재현 가능한 코드, 정제 데이터, Knowledge Graph/DAG export, 그림, 결과표를 포함한다.
