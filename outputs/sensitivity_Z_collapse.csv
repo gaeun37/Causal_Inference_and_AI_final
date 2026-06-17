@@ -1,0 +1,3 @@
+outcome,Z_scheme,P_Z,within_Z_diffs,adjusted_ATE_demo
+Y1_improvement_response,2-level (data-driven: order_focused vs reform_leaning),order_focused=0.25;reform_leaning=0.75,order_focused=-0.033;reform_leaning=0.117,0.08
+Y2_order_control_response,2-level (data-driven: order_focused vs reform_leaning),order_focused=0.25;reform_leaning=0.75,order_focused=0.2;reform_leaning=0.117,0.138

@@ -1,0 +1,9 @@
+view,scheme,context_Z,n_X,n_M1,n_M2,n_Y1,n_Y2,Y1_share_of_responses,lean
+extraction_counts,Z_3level,institutional,0,0,0,2,0,1.0,improvement (Y1)
+extraction_counts,Z_3level,mixed,1,2,2,7,3,0.7,improvement (Y1)
+extraction_counts,Z_3level,order_focused,2,1,2,0,2,0.0,order-control (Y2)
+extraction_counts,Z_2level,order_focused,2,1,2,0,2,0.0,order-control (Y2)
+extraction_counts,Z_2level,reform_leaning,1,2,2,9,3,0.75,improvement (Y1)
+article_presence,Z_3level,institutional,1/1,0/1,0/1,1/1,0/1,,improvement (Y1)
+article_presence,Z_3level,mixed,4/6,2/6,3/6,5/6,2/6,,improvement (Y1)
+article_presence,Z_3level,order_focused,1/1,1/1,1/1,0/1,1/1,,order-control (Y2)
