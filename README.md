@@ -158,7 +158,7 @@ python scripts/build_pipeline.py
 | `outputs/sensitivity_Z_collapse.csv` | 2-level Z robustness check |
 | `outputs/real_corpus_cooccurrence.csv` | 실제 추출 기반 rung-1 association |
 | `outputs/quote_verification_report.csv` | OCR quote verification |
-| `report/final_report_ko_6step_causal_effect_6pages.docx` | 최종 보고서 |
+| `report/` | 최종 보고서 |
 
 ---
 
