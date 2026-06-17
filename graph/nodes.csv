@@ -1,0 +1,97 @@
+id,label,type,date,context,page,newspaper,role,verification,verified
+iss001,The Evening Standard 1912-01-15,Issue,1912-01-15,order_focused,,,,,
+art001,"Rioting of Operatives at Mills in Lawrence, Mass.",Article,1912-01-15,,1,The Evening Standard,,,
+iss002,Daily Kennebec Journal 1912-01-22,Issue,1912-01-22,mixed,,,,,
+art002,The Lawrence Strike (Sunday passes very quietly),Article,1912-01-22,,1,Daily Kennebec Journal,,,
+art003,"Lawrence strike — better wages, investigation called",Article,1912-01-22,,10,Daily Kennebec Journal,,,
+iss004,The Washington Times 1912-02-27,Issue,1912-02-27,institutional,,,,,
+art004,Block in Mill Strike — Immediate Congressional Interference ,Article,1912-02-27,,1,The Washington Times,,,
+iss005,Daily Kennebec Journal 1912-02-27,Issue,1912-02-27,mixed,,,,,
+art005,Lawrence Strikers Shoot From Ambush — Disorder Reigns / Stri,Article,1912-02-27,,1,Daily Kennebec Journal,,,
+iss006,Daily Kennebec Journal 1912-02-28,Issue,1912-02-28,mixed,,,,,
+art006,Investigation by Congress — House committee on rules hearing,Article,1912-02-28,,4,Daily Kennebec Journal,,,
+iss007,Daily Kennebec Journal 1912-03-08,Issue,1912-03-08,mixed,,,,,
+art007,"Investigation To Come — committee examines conditions, child",Article,1912-03-08,,12,Daily Kennebec Journal,,,
+iss008,Daily Kennebec Journal 1912-03-15,Issue,1912-03-15,mixed,,,,,
+art008,Strike declared off because of wage increases granted,Article,1912-03-15,,10,Daily Kennebec Journal,,,
+ctx001,Capital punishment debate ('Capital punishment is right'),Article,1912-01-15,,1,The Evening Standard,,,
+ctx002,Mysterious murder case (Hagelganz),Article,1912-01-15,,1,The Evening Standard,,,
+ctx003,Taxicab Strike A Failure,Article,1912-01-15,,1,The Evening Standard,,,
+ctx004,Senate speeches; Congressmen Kent/Berger; Roosevelt committe,Article,1912-02-27,,2,The Washington Times,,,
+ext001,protest pressure (scale),Extraction,,,,,X,verified,
+quote_ext001,"nearly 30,000 hands are idle, half of whom are actually on strike",SupportingQuote,,,,,,,True
+claim_ext001,protest pressure (scale),FramingClaim,,,,,X,,
+ext002,protest pressure (mills shut),Extraction,,,,,X,verified,
+quote_ext002,seven of the big plants were shut down,SupportingQuote,,,,,,,True
+claim_ext002,protest pressure (mills shut),FramingClaim,,,,,X,,
+ext003,"demand-legitimacy context (wage cut, women/children law)",Extraction,,,,,M1,verified,
+quote_ext003,[the trouble is] due to a general reduction in wages ... by a cut in t,SupportingQuote,,,,,,,True
+claim_ext003,"demand-legitimacy context (wage cut, women/children law)",FramingClaim,,,,,M1,,
+ext004,disorder framing,Extraction,,,,,M2,verified,
+quote_ext004,Disorders before the gate of the great textile mills of Lawrence becam,SupportingQuote,,,,,,,True
+claim_ext004,disorder framing,FramingClaim,,,,,M2,,
+ext005,mob/violence framing,Extraction,,,,,M2,verified,
+quote_ext005,when a mob stormed several of the mills and injured employees and prop,SupportingQuote,,,,,,,True
+claim_ext005,mob/violence framing,FramingClaim,,,,,M2,,
+ext006,militia/police order-control,Extraction,,,,,Y2,verified,
+quote_ext006,two companies of militia were called from the armory to assist the pol,SupportingQuote,,,,,,,True
+claim_ext006,militia/police order-control,FramingClaim,,,,,Y2,,
+ext007,bayonet charge,Extraction,,,,,Y2,verified,
+quote_ext007,ordered the militiamen to charge with bayonets,SupportingQuote,,,,,,,True
+claim_ext007,bayonet charge,FramingClaim,,,,,Y2,,
+ext008,wage-cut asserted as cause of trouble,Extraction,,,,,X_cause,verified,
+quote_ext008,The trouble ... [is] due to a general reduction in wages,SupportingQuote,,,,,,,True
+claim_ext008,wage-cut asserted as cause of trouble,AssertedCausalClaim,,,,,X_cause,,
+ext009,demand legitimacy (better wages),Extraction,,,,,M1,verified,
+quote_ext009,[the strike] by his people for better wages,SupportingQuote,,,,,,,True
+claim_ext009,demand legitimacy (better wages),FramingClaim,,,,,M1,,
+ext010,investigation called for,Extraction,,,,,Y1,verified,
+quote_ext010,calling for an investigation of the [strike],SupportingQuote,,,,,,,True
+claim_ext010,investigation called for,FramingClaim,,,,,Y1,,
+ext011,order-restoration (quiet),Extraction,,,,,Y2,verified,
+quote_ext011,Sunday in the city passes very quietly,SupportingQuote,,,,,,,True
+claim_ext011,order-restoration (quiet),FramingClaim,,,,,Y2,,
+ext012,strike salience (headline),Extraction,,,,,X,verified,
+quote_ext012,The Lawrence Strike,SupportingQuote,,,,,,,True
+claim_ext012,strike salience (headline),FramingClaim,,,,,X,,
+ext013,congressional investigation resolution,Extraction,,,,,Y1,verified,
+quote_ext013,resolution for an immediate congressional investigation of the charges,SupportingQuote,,,,,,,True
+claim_ext013,congressional investigation resolution,FramingClaim,,,,,Y1,,
+ext014,House Rules Committee hearings,Extraction,,,,,Y1,verified,
+quote_ext014,"hearings on ... an investigation, will be held by the House Rules Comm",SupportingQuote,,,,,,,True
+claim_ext014,House Rules Committee hearings,FramingClaim,,,,,Y1,,
+ext015,disorder framing (ambush/shots),Extraction,,,,,M2,verified,
+quote_ext015,Striker wounded - disorder reigns in early morning ... Dozen shots fir,SupportingQuote,,,,,,,True
+claim_ext015,disorder framing (ambush/shots),FramingClaim,,,,,M2,,
+ext016,congressional investigation pending,Extraction,,,,,Y1,verified,
+quote_ext016,"Pending a congressional investigation, which is expected to start some",SupportingQuote,,,,,,,True
+claim_ext016,congressional investigation pending,FramingClaim,,,,,Y1,,
+ext017,arrests/court (order control),Extraction,,,,,Y2,verified,
+quote_ext017,the district court was in session far into the evening ... persons arr,SupportingQuote,,,,,,,True
+claim_ext017,arrests/court (order control),FramingClaim,,,,,Y2,,
+ext018,House committee hearing,Extraction,,,,,Y1,verified,
+quote_ext018,The House committee on rules will have a hearing on Saturday on the [L,SupportingQuote,,,,,,,True
+claim_ext018,House committee hearing,FramingClaim,,,,,Y1,,
+ext019,child-labor/wage legitimacy (hearing),Extraction,,,,,M1,verified,
+quote_ext019,Are you in sympathy with child labor? Do you believe children should t,SupportingQuote,,,,,,,True
+claim_ext019,child-labor/wage legitimacy (hearing),FramingClaim,,,,,M1,,
+ext020,attacks on houses (disorder),Extraction,,,,,M2,verified,
+quote_ext020,attacks upon the houses of people who ... refused to strike. Their doo,SupportingQuote,,,,,,,True
+claim_ext020,attacks on houses (disorder),FramingClaim,,,,,M2,,
+ext021,committee examines conditions/wages,Extraction,,,,,Y1,verified,
+quote_ext021,[committee examined pay sheets;] wages compared approximately with the,SupportingQuote,,,,,,,True
+claim_ext021,committee examines conditions/wages,FramingClaim,,,,,Y1,,
+ext022,strike declared off on wage increases,Extraction,,,,,Y1,verified,
+quote_ext022,voted to recommend that the strike against certain of the mills be dec,SupportingQuote,,,,,,,True
+claim_ext022,strike declared off on wage increases,FramingClaim,,,,,Y1,,
+ext023,victory framing,Extraction,,,,,Y1,verified,
+quote_ext023,"'It is the greatest victory ever won by labor in this country,' declar",SupportingQuote,,,,,,,True
+claim_ext023,victory framing,FramingClaim,,,,,Y1,,
+ext024,wage increases granted,Extraction,,,,,Y1,verified,
+quote_ext024,have nearly all granted increases in wages,SupportingQuote,,,,,,,True
+claim_ext024,wage increases granted,FramingClaim,,,,,Y1,,
+ext025,rioting asserted as cause of militia,Extraction,,,,,Y2,verified,
+quote_ext025,"the rioting occurred, resulting in the calling out of the militia",SupportingQuote,,,,,,,True
+claim_ext025,rioting asserted as cause of militia,AssertedCausalClaim,,,,,Y2,,
+ext026,contextual confounders,Extraction,,,,,Z,analyst model assumption,
+claim_ext026,contextual confounders,AnalystAssumption,,,,,Z,,

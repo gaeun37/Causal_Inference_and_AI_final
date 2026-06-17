@@ -1,0 +1,9 @@
+outcome,P_Y_given_X1,P_Y_given_X0,naive_difference,P_Y_do_X1,P_Y_do_X0,ATE_demo_adjusted,interpretation
+Y1_improvement_response,0.522,0.5,0.022,0.565,0.464,0.101,demo only; not a historical effect
+Y1_improvement_response by institutional,0.812,0.667,0.146,,,,within-stratum (conditional) difference
+Y1_improvement_response by mixed,0.591,0.444,0.146,,,,within-stratum (conditional) difference
+Y1_improvement_response by order_focused,0.267,0.3,-0.033,,,,within-stratum (conditional) difference
+Y2_order_control_response,0.567,0.371,0.195,0.528,0.407,0.121,demo only; not a historical effect
+Y2_order_control_response by institutional,0.312,0.25,0.062,,,,within-stratum (conditional) difference
+Y2_order_control_response by mixed,0.5,0.389,0.111,,,,within-stratum (conditional) difference
+Y2_order_control_response by order_focused,0.8,0.6,0.2,,,,within-stratum (conditional) difference

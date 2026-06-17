@@ -1,0 +1,27 @@
+extraction_id,role_in_dag,ocr_check,matched_fragment
+ext001,X,present in real OCR,"nearly 30,000 nands are ld)e, holf"
+ext002,X,present in real OCR,seven of the i l big
+ext003,M1,present in real OCR,are due to a general reduction
+ext004,M2,present in real OCR,Disorders before the gato of the
+ext005,M2,present in real OCR,when a mob stormed several 'of
+ext006,Y2,present in real OCR,two companies of militia were called
+ext007,Y2,present in real OCR,militiamen to charge with bqyonets
+ext008,X_cause,present in real OCR,are due to a general reduction
+ext009,M1,present in real OCR,"the strike, by his people for"
+ext010,Y1,present in real OCR,calling for an Investigation of the
+ext011,Y2,present in real OCR,Sunday in the City Passes Very
+ext012,X,present in real OCR,THE LAWRENCE STRIKE
+ext013,Y1,present in real OCR,resolution for an immediate Congressional Investigation
+ext014,Y1,present (OCR garbled; confirmed by token search),
+ext015,M2,present in real OCR,Striker Wounded-Disorder Reigns In Early Morning
+ext016,Y1,present in real OCR,"Fending a congressional investigation, which is"
+ext017,Y2,present in real OCR,the district court was ip session
+ext018,Y1,present in real OCR,The House committee on rules will
+ext019,M1,present in real OCR,Are you in sympathy with child
+ext020,M2,present in real OCR,"attacks upon the houses ,.f people"
+ext021,Y1,present in real OCR,wages compared approximately with the amounts
+ext022,Y1,present in real OCR,voted to recommend that the strike
+ext023,Y1,present in real OCR,It is the greatest victory ever
+ext024,Y1,present in real OCR,have nearly all grant ed increases
+ext025,Y2,present in real OCR,"occurred, resulting in. the calling out"
+ext026,Z,"n/a (analyst-added, no quote)",

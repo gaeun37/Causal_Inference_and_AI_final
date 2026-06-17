@@ -1,0 +1,5 @@
+outcome,weighting,P_Z,within_Z_diffs,adjusted_ATE_demo
+Y1_improvement_response,demo_balanced,order_focused=0.25;mixed=0.5;institutional=0.25,order_focused=-0.033;mixed=0.146;institutional=0.146,0.101
+Y1_improvement_response,observed_issue_share,order_focused=0.125;mixed=0.75;institutional=0.125,order_focused=-0.033;mixed=0.146;institutional=0.146,0.124
+Y2_order_control_response,demo_balanced,order_focused=0.25;mixed=0.5;institutional=0.25,order_focused=0.2;mixed=0.111;institutional=0.062,0.121
+Y2_order_control_response,observed_issue_share,order_focused=0.125;mixed=0.75;institutional=0.125,order_focused=0.2;mixed=0.111;institutional=0.062,0.116

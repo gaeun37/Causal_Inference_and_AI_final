@@ -1,0 +1,22 @@
+# ─────────────────────────────────────────────────────────────────────────
+# 의존성 (Dependencies)
+#
+# 이 프로젝트의 파이프라인
+#   parse_alto.py · clean_ocr.py · issue_context.py ·
+#   make_demo_data.py · build_pipeline.py · render_figures*.py
+# 은 Python 3 표준 라이브러리만 사용합니다 (외부 패키지 없음).
+# 따라서 `pip install -r requirements.txt` 는 아무것도 설치하지 않고
+# 정상 종료하며, 파이프라인은 맨 Python 환경에서 그대로 실행됩니다.
+#
+# 요구 버전: Python 3.8 이상
+#
+# 사용 표준 라이브러리: csv, re, json, math, os, glob, pathlib,
+#                       unicodedata, collections, xml.etree.ElementTree,
+#                       importlib.util
+#
+# ─────────────────────────────────────────────────────────────────────────
+# (선택) 그림 SVG를 직접 PNG로 변환해 보고 싶을 때만 필요합니다.
+# 파이프라인은 이미 바로 볼 수 있는 .svg 파일을 생성하므로 필수가 아닙니다.
+# 이 패키지는 시스템 라이브러리(libcairo) 설치가 필요할 수 있어 기본 비활성화합니다.
+#
+# cairosvg>=2.5

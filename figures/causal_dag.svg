@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="600" viewBox="0 0 1040 600" font-family="'Noto Sans CJK KR','Segoe UI',sans-serif">
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L0,8 L10,4 z" fill="#495057"/></marker><marker id="arrowd" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L0,8 L10,4 z" fill="#868e96"/></marker><marker id="arroww" markerWidth="13" markerHeight="13" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L0,8 L10,4 z" fill="#ffffff"/></marker><filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.14"/></filter></defs>
+<rect width="1040" height="600" fill="#fbfcfe"/>
+<text x="520.0" y="40" text-anchor="middle" font-size="23" font-weight="700" fill="#212529" letter-spacing="0.3">인과 DAG — 시위 프레이밍 → 개선 vs 질서통제</text>
+<text x="520.0" y="64" text-anchor="middle" font-size="13.5" fill="#868e96">실제 1912년 신문 OCR에서 읽은 두 경로; Z는 연구자가 추가한 혼란변수</text>
+<path d="M480,143 Q240.0,170.0 180,287" fill="none" stroke="#868e96" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#arrowd)"/>
+<line x1="520" y1="143" x2="470" y2="177" stroke="#868e96" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#arrowd)"/>
+<path d="M610,135 Q785.0,126.0 840,177" fill="none" stroke="#868e96" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#arrowd)"/>
+<path d="M510,143 Q435.0,250.0 440,397" fill="none" stroke="#868e96" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#arrowd)"/>
+<path d="M630,140 Q920.0,183.5 870,397" fill="none" stroke="#868e96" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#arrowd)"/>
+<line x1="255.0" y1="306" x2="365.0" y2="220" stroke="#495057" stroke-width="2.2" marker-end="url(#arrow)"/>
+<line x1="575.0" y1="210" x2="735.0" y2="210" stroke="#495057" stroke-width="2.2" marker-end="url(#arrow)"/>
+<line x1="255.0" y1="334" x2="365.0" y2="420" stroke="#495057" stroke-width="2.2" marker-end="url(#arrow)"/>
+<line x1="575.0" y1="430" x2="735.0" y2="430" stroke="#495057" stroke-width="2.2" marker-end="url(#arrow)"/>
+<rect x="395.0" y="77.0" width="250" height="66" rx="14" fill="#e5dbff" stroke="#5f3dc4" stroke-width="2.5" filter="url(#shadow)"/><text x="520" y="106" text-anchor="middle" font-size="16" font-weight="700" fill="#5f3dc4">Z — 혼란변수</text><text x="520" y="125" text-anchor="middle" font-size="11.5" fill="#495057">신문 성향 · 맥락 · 혼란</text>
+<rect x="45.0" y="287.0" width="210" height="66" rx="14" fill="#dbe4ff" stroke="#364fc7" stroke-width="2.5" filter="url(#shadow)"/><text x="150" y="316" text-anchor="middle" font-size="16" font-weight="700" fill="#364fc7">X — 시위 압력</text><text x="150" y="335" text-anchor="middle" font-size="11.5" fill="#495057">사회적 압력으로 프레이밍</text>
+<rect x="365.0" y="177.0" width="210" height="66" rx="14" fill="#c5f6fa" stroke="#0b7285" stroke-width="2.5" filter="url(#shadow)"/><text x="470" y="206" text-anchor="middle" font-size="16" font-weight="700" fill="#0b7285">M1 — 요구 정당화</text><text x="470" y="225" text-anchor="middle" font-size="11.5" fill="#495057">임금/시간 요구의 정당성</text>
+<rect x="735.0" y="177.0" width="210" height="66" rx="14" fill="#d3f9d8" stroke="#2b8a3e" stroke-width="2.5" filter="url(#shadow)"/><text x="840" y="206" text-anchor="middle" font-size="16" font-weight="700" fill="#2b8a3e">Y1 — 개선</text><text x="840" y="225" text-anchor="middle" font-size="11.5" fill="#495057">청문회 · 협상 · 임금인상</text>
+<rect x="365.0" y="397.0" width="210" height="66" rx="14" fill="#ffe8cc" stroke="#d9480f" stroke-width="2.5" filter="url(#shadow)"/><text x="470" y="426" text-anchor="middle" font-size="16" font-weight="700" fill="#d9480f">M2 — 혼란 프레이밍</text><text x="470" y="445" text-anchor="middle" font-size="11.5" fill="#495057">폭동 · 체포 · 위협</text>
+<rect x="735.0" y="397.0" width="210" height="66" rx="14" fill="#ffe3e3" stroke="#c92a2a" stroke-width="2.5" filter="url(#shadow)"/><text x="840" y="426" text-anchor="middle" font-size="16" font-weight="700" fill="#c92a2a">Y2 — 질서 통제</text><text x="840" y="445" text-anchor="middle" font-size="11.5" fill="#495057">민병대 · 체포 · 진압</text>
+<text x="300" y="252" text-anchor="middle" font-size="12" fill="#2b8a3e" font-weight="600">진보 경로 (X→M1→Y1)</text>
+<text x="300" y="392" text-anchor="middle" font-size="12" fill="#c92a2a" font-weight="600">혼란 경로 (X→M2→Y2)</text>
+<rect x="45" y="498" width="930" height="58" rx="10" fill="#fff" stroke="#dee2e6"/>
+<line x1="60" y1="520" x2="94" y2="520" stroke="#495057" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="104" y="524" font-size="12.5" fill="#495057">실선 = 텍스트에서 해석한 경로 (근거 인용 23건)</text>
+<line x1="490" y1="520" x2="524" y2="520" stroke="#868e96" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#arrowd)"/>
+<text x="534" y="524" font-size="12.5" fill="#495057">점선 = 연구자 추가 혼란변수 (Z)</text>
+<text x="60" y="546" font-size="12" fill="#868e96">시간 순서(호 단위): X는 1월, Y 반응은 2–3월. M1/M2는 매개변수 — 총효과 추정 시 보정하지 않음.</text>
+</svg>

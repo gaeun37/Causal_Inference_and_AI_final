@@ -1,0 +1,10 @@
+source,target,edge_type,support
+Z,X,confounding,analyst-added
+Z,M1,confounding,analyst-added
+Z,Y1,confounding,analyst-added
+Z,M2,confounding,analyst-added
+Z,Y2,confounding,analyst-added
+X,M1,causal_path,text-supported interpretation across issue sequence
+M1,Y1,causal_path,text-supported interpretation across issue sequence
+X,M2,causal_path,text-supported interpretation across issue sequence
+M2,Y2,causal_path,text-supported interpretation across issue sequence

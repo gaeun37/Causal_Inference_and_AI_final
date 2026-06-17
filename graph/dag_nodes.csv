@@ -1,0 +1,7 @@
+id,label,type,description
+Z,Contextual confounders,confounder,"newspaper orientation/locale, prior labor context, industrial interest, actual disorder"
+X,Protest pressure framing,treatment,strike framed as strong social pressure
+M1,Demand-legitimacy framing,mediator,wage/hours/child-labor grievance framed as legitimate
+Y1,Development-oriented improvement response,outcome,"investigation, hearings, negotiation, wage settlement"
+M2,Disorder/conflict framing,mediator,"riot, mob, shots, arrests, public danger"
+Y2,Order-control response,outcome,"militia, police, arrests, suppression, order restoration"

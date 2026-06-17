@@ -1,0 +1,6 @@
+query,estimand_possible,reason,interpretation
+Effect of X on Y1 (historical),No,Real corpus has X=1 in essentially every article: no X=0 comparison group; unobserved confounding; asserted not experimental.,Not identifiable from this corpus
+Effect of X on Y1 (demo),Demo only,Synthetic X=0 units added; Z adjusted by the backdoor formula.,"naive +0.022 -> adjusted +0.101 (modest, context-conditional, NOT historical)"
+Effect of X on Y2 (demo),Demo only,Synthetic X=0 units added; Z adjusted by the backdoor formula.,naive +0.195 -> adjusted +0.121 (raw overstates link; NOT historical)
+Mediated effect via M1 / M2,No,M1/M2 are mediators on the X->Y paths; conditioning would block the total effect.,diagnostic only (not adjusted for)
+Historical effect of strike on social progress,No,"Small textual corpus, no true counterfactual.",not claimed

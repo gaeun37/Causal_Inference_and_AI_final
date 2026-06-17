@@ -1,0 +1,4 @@
+claim_type,count,meaning
+analyst-added,1,structure added by the analyst (e.g. confounder Z)
+asserted-causation,2,a cause-effect claim made by the newspaper/actors
+text-supported,23,framing role with a direct supporting quote

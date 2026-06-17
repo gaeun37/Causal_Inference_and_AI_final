@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="280" viewBox="0 0 1040 280" font-family="'Noto Sans CJK KR','Segoe UI',sans-serif">
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L0,8 L10,4 z" fill="#495057"/></marker><marker id="arrowd" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L0,8 L10,4 z" fill="#868e96"/></marker><marker id="arroww" markerWidth="13" markerHeight="13" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L0,8 L10,4 z" fill="#ffffff"/></marker><filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.14"/></filter></defs>
+<rect width="1040" height="280" fill="#fbfcfe"/>
+<text x="520.0" y="40" text-anchor="middle" font-size="23" font-weight="700" fill="#212529" letter-spacing="0.3">데이터 파이프라인</text>
+<text x="520.0" y="64" text-anchor="middle" font-size="13.5" fill="#868e96">원본 1912년 신문 OCR에서 감사 가능한 인과추론 시연까지</text>
+<rect x="30.0" y="108.0" width="118" height="84" rx="12" fill="#d0ebff" stroke="#1864ab" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="89.0" y="144" text-anchor="middle" font-size="14" font-weight="700" fill="#1864ab">원본 OCR</text>
+<text x="89.0" y="176" text-anchor="middle" font-size="10.5" fill="#495057">ALTO 90쪽</text>
+<line x1="148.0" y1="150" x2="173.66666666666666" y2="150" stroke="#adb5bd" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="173.66666666666666" y="108.0" width="118" height="84" rx="12" fill="#c5f6fa" stroke="#1098ad" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="232.66666666666666" y="144" text-anchor="middle" font-size="14" font-weight="700" fill="#1098ad">정제</text>
+<text x="232.66666666666666" y="176" text-anchor="middle" font-size="10.5" fill="#495057">정규화+로그</text>
+<line x1="291.66666666666663" y1="150" x2="317.3333333333333" y2="150" stroke="#adb5bd" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="317.3333333333333" y="108.0" width="118" height="84" rx="12" fill="#c3fae8" stroke="#0ca678" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="376.3333333333333" y="144" text-anchor="middle" font-size="14" font-weight="700" fill="#0ca678">기사 분리</text>
+<text x="376.3333333333333" y="176" text-anchor="middle" font-size="10.5" fill="#495057">파업 기사</text>
+<line x1="435.3333333333333" y1="150" x2="461.0" y2="150" stroke="#adb5bd" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="461.0" y="108.0" width="118" height="84" rx="12" fill="#e5dbff" stroke="#5f3dc4" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="520.0" y="144" text-anchor="middle" font-size="14" font-weight="700" fill="#5f3dc4">코딩</text>
+<text x="520.0" y="176" text-anchor="middle" font-size="10.5" fill="#495057">X/M1/M2/Y1/Y2/Z</text>
+<line x1="579.0" y1="150" x2="604.6666666666666" y2="150" stroke="#adb5bd" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="604.6666666666666" y="108.0" width="118" height="84" rx="12" fill="#ffdeeb" stroke="#a61e4d" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="663.6666666666666" y="135" text-anchor="middle" font-size="14" font-weight="700" fill="#a61e4d">지식</text>
+<text x="663.6666666666666" y="153" text-anchor="middle" font-size="14" font-weight="700" fill="#a61e4d">그래프</text>
+<text x="663.6666666666666" y="176" text-anchor="middle" font-size="10.5" fill="#495057">출처 추적</text>
+<line x1="722.6666666666666" y1="150" x2="748.3333333333333" y2="150" stroke="#adb5bd" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="748.3333333333333" y="108.0" width="118" height="84" rx="12" fill="#ffe8cc" stroke="#e8590c" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="807.3333333333333" y="135" text-anchor="middle" font-size="14" font-weight="700" fill="#e8590c">인과</text>
+<text x="807.3333333333333" y="153" text-anchor="middle" font-size="14" font-weight="700" fill="#e8590c">DAG</text>
+<text x="807.3333333333333" y="176" text-anchor="middle" font-size="10.5" fill="#495057">두 경로</text>
+<line x1="866.3333333333333" y1="150" x2="891.9999999999999" y2="150" stroke="#adb5bd" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="892.0" y="108.0" width="118" height="84" rx="12" fill="#d3f9d8" stroke="#2b8a3e" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="951.0" y="135" text-anchor="middle" font-size="14" font-weight="700" fill="#2b8a3e">backdoor</text>
+<text x="951.0" y="153" text-anchor="middle" font-size="14" font-weight="700" fill="#2b8a3e">demo</text>
+<text x="951.0" y="176" text-anchor="middle" font-size="10.5" fill="#495057">Z 보정</text>
+<text x="520.0" y="254" text-anchor="middle" font-size="12" fill="#868e96">원본 증거(왼쪽)는 분석 구조와 분리 보존되며, 모든 단계는 기록되고 재현 가능하다.</text>
+</svg>
