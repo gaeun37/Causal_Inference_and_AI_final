@@ -61,6 +61,17 @@ def build_kg(ex):
           newspaper=a["newspaper"], date=a["date"])
         e(a["issue_id"], a["article_id"], "CONTAINS")
         e(a["article_id"], a["issue_id"], "DERIVED_FROM")
+    # ensure ALL corpus issues are present (8 total); issues with no coded
+    # extraction (e.g. iss003) are kept as context-only Issue nodes so the
+    # KG issue count matches the documented 8-issue corpus.
+    surls = ROOT/"data"/"raw"/"source_urls.csv"
+    if surls.exists():
+        for s in rd(surls):
+            iid = s.get("issue_id","").strip()
+            if iid and iid not in seen:
+                n(iid, f"{s['newspaper']} {s['date']}", "Issue",
+                  date=s["date"], context=s.get("context_Z",""),
+                  verification="context-only (no coded extraction)")
     for x in ex:
         ext=x["extraction_id"]; q=f"quote_{ext}"; c=f"claim_{ext}"
         n(ext, x["label"], "Extraction", role=x["role_in_dag"], verification=x["verification_status"])
