@@ -1,7 +1,11 @@
 metric,value
-nodes,96
-edges,125
+nodes,109
+edges,151
 verified_quotes,25
 issues,7
 articles,12
 asserted_causal_claims,2
+entities_person,1
+entities_organization,6
+entities_place,1
+entities_event,5
