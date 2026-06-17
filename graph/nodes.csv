@@ -18,6 +18,7 @@ ctx001,Capital punishment debate ('Capital punishment is right'),Article,1912-01
 ctx002,Mysterious murder case (Hagelganz),Article,1912-01-15,,1,The Evening Standard,,,
 ctx003,Taxicab Strike A Failure,Article,1912-01-15,,1,The Evening Standard,,,
 ctx004,Senate speeches; Congressmen Kent/Berger; Roosevelt committe,Article,1912-02-27,,2,The Washington Times,,,
+iss003,Daily Kennebec Journal 1912-02-09,Issue,1912-02-09,mixed,,,,context-only (no coded extraction),
 ext001,protest pressure (scale),Extraction,,,,,X,verified,
 quote_ext001,"nearly 30,000 hands are idle, half of whom are actually on strike",SupportingQuote,,,,,,,True
 claim_ext001,protest pressure (scale),FramingClaim,,,,,X,,
