@@ -1,0 +1,9 @@
+issue_id,assigned_Z,full_order_per_1k,full_reform_per_1k,strike_lines,proximal_order,proximal_reform,proximal_order_share,data_driven_Z_proximal,note
+iss001,order_focused,2.58,1.91,33,12,0,1.0,order_focused,order-focused strongly confirmed (disorder-only strike framing)
+iss002,mixed,1.59,2.15,125,7,17,0.292,reform_leaning,reform/institution-leaning strike framing
+iss003,mixed,1.35,3.59,66,1,20,0.048,reform_leaning,reform/institution-leaning strike framing
+iss004,institutional,1.78,2.59,41,8,15,0.348,mixed,reform/institution-leaning strike framing
+iss005,mixed,2.26,2.59,106,10,30,0.25,reform_leaning,reform/institution-leaning strike framing
+iss006,mixed,1.76,2.57,104,8,24,0.25,reform_leaning,reform/institution-leaning strike framing
+iss007,mixed,1.59,2.92,108,10,29,0.256,reform_leaning,reform/institution-leaning strike framing
+iss008,mixed,1.98,2.3,111,4,20,0.167,reform_leaning,reform/institution-leaning strike framing

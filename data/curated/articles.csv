@@ -1,0 +1,13 @@
+article_id,issue_id,date,newspaper,page,title,article_type,strike_related,main_role,context_Z,source_span
+art001,iss001,1912-01-15,The Evening Standard,1,"Rioting of Operatives at Mills in Lawrence, Mass.",news,1,X/M1/M2/Y2,order_focused,"raw/ocr Evening standard p1, lines ~59-127"
+art002,iss002,1912-01-22,Daily Kennebec Journal,1,The Lawrence Strike (Sunday passes very quietly),news,1,X/Y2,mixed,"raw/ocr Kennebec Jan22 p1, lines ~496-520"
+art003,iss002,1912-01-22,Daily Kennebec Journal,10,"Lawrence strike — better wages, investigation called",news,1,X/M1/Y1,mixed,"raw/ocr Kennebec Jan22 p10, lines ~32-211"
+art004,iss004,1912-02-27,The Washington Times,1,Block in Mill Strike — Immediate Congressional Interference / Investigation,news,1,X/Y1,institutional,"raw/ocr Washington times Feb27 p1, lines ~179-218"
+art005,iss005,1912-02-27,Daily Kennebec Journal,1,Lawrence Strikers Shoot From Ambush — Disorder Reigns / Strike Matter Claims Attention of Congress,news,1,X/M2/Y1/Y2,mixed,"raw/ocr Kennebec Feb27 p1, lines ~63-106"
+art006,iss006,1912-02-28,Daily Kennebec Journal,4,Investigation by Congress — House committee on rules hearing,news,1,Y1,mixed,"raw/ocr Kennebec Feb28 p4, lines ~189-258"
+art007,iss007,1912-03-08,Daily Kennebec Journal,12,"Investigation To Come — committee examines conditions, child labor, wages",news,1,M1/M2/Y1,mixed,"raw/ocr Kennebec Mar8 p12, lines ~701-765"
+art008,iss008,1912-03-15,Daily Kennebec Journal,10,Strike declared off because of wage increases granted,news,1,X/Y1/M2,mixed,"raw/ocr Kennebec Mar15 p10, lines ~52-148"
+ctx001,iss001,1912-01-15,The Evening Standard,1,Capital punishment debate ('Capital punishment is right'),context,0,Z (context only),order_focused,"ES Jan15 p1, lines ~617-696"
+ctx002,iss001,1912-01-15,The Evening Standard,1,Mysterious murder case (Hagelganz),context,0,Z (context only),order_focused,"ES Jan15 p1, lines ~503-522"
+ctx003,iss001,1912-01-15,The Evening Standard,1,Taxicab Strike A Failure,context,0,Z (context only),order_focused,"ES Jan15 p1, line ~634"
+ctx004,iss004,1912-02-27,The Washington Times,2,Senate speeches; Congressmen Kent/Berger; Roosevelt committee,context,0,Z (context only),institutional,"WT Feb27 p2, lines ~19-202"
