@@ -74,6 +74,18 @@ def build_kg(ex):
         if x["raw_ocr_quote"].strip(): e(c, q, "EVIDENCE")
         if x["article_id"] not in ("analyst001",):
             e(x["article_id"], ext, "HAS_EXTRACTION")
+    # entity / event layer (Person, Organization, Place, Event) -- bridges the
+    # example schema; each entity is tied to its article and to a source quote.
+    epath = CUR/"entities.csv"
+    if epath.exists():
+        for ent in rd(epath):
+            n(ent["entity_id"], ent["label"], ent["type"],
+              verification="verified" if ent.get("supporting_quote","").strip() else "")
+            if ent.get("article_id"):
+                e(ent["article_id"], ent["entity_id"], "MENTIONS")
+            sx = ent.get("source_extraction_id","").strip()
+            if sx:
+                e(ent["entity_id"], f"quote_{sx}", "SUPPORTED_BY")
     wr(GRAPH/"nodes.csv", nodes,
        fn=["id","label","type","date","context","page","newspaper","role","verification","verified"])
     wr(GRAPH/"edges.csv", edges)
@@ -82,7 +94,11 @@ def build_kg(ex):
         {"metric":"verified_quotes","value":sum(1 for n_ in nodes if n_.get("verified")=="True" or n_.get("verified") is True)},
         {"metric":"issues","value":sum(1 for n_ in nodes if n_["type"]=="Issue")},
         {"metric":"articles","value":sum(1 for n_ in nodes if n_["type"]=="Article")},
-        {"metric":"asserted_causal_claims","value":sum(1 for n_ in nodes if n_["type"]=="AssertedCausalClaim")}]
+        {"metric":"asserted_causal_claims","value":sum(1 for n_ in nodes if n_["type"]=="AssertedCausalClaim")},
+        {"metric":"entities_person","value":sum(1 for n_ in nodes if n_["type"]=="Person")},
+        {"metric":"entities_organization","value":sum(1 for n_ in nodes if n_["type"]=="Organization")},
+        {"metric":"entities_place","value":sum(1 for n_ in nodes if n_["type"]=="Place")},
+        {"metric":"entities_event","value":sum(1 for n_ in nodes if n_["type"]=="Event")}]
     wr(OUT/"kg_summary.csv", kg)
 
 # ---------------- Step 5: DAG ----------------
@@ -295,6 +311,24 @@ def main():
                           "within_Z_diffs":";".join(f"{z}={within[z]}" for z in zs),
                           "adjusted_ATE_demo":round(ate,3)})
     wr(OUT/"sensitivity_weighting.csv", srows)
+    # ---- robustness: collapse Z to the 2 levels the data-driven measure supports ----
+    # (issue_context.py shows only order_focused vs reform_leaning is data-backed)
+    collapse={"order_focused":"order_focused","mixed":"reform_leaning","institutional":"reform_leaning"}
+    def wrate2(o,x,z2):
+        f=[r for r in rows if r["X_protest_pressure"]==x and collapse[r["Z_context"]]==z2]
+        return sum(r[o] for r in f)/len(f) if f else 0.0
+    z2s=["order_focused","reform_leaning"]
+    n2={z2:sum(1 for r in rows if collapse[r["Z_context"]]==z2) for z2 in z2s}
+    pz2={z2:n2[z2]/sum(n2.values()) for z2 in z2s}
+    r2=[]
+    for o in ("Y1_improvement_response","Y2_order_control_response"):
+        within={z2:round(wrate2(o,1,z2)-wrate2(o,0,z2),3) for z2 in z2s}
+        ate=sum(within[z2]*pz2[z2] for z2 in z2s)
+        r2.append({"outcome":o,"Z_scheme":"2-level (data-driven: order_focused vs reform_leaning)",
+                   "P_Z":";".join(f"{z2}={round(pz2[z2],3)}" for z2 in z2s),
+                   "within_Z_diffs":";".join(f"{z2}={within[z2]}" for z2 in z2s),
+                   "adjusted_ATE_demo":round(ate,3)})
+    wr(OUT/"sensitivity_Z_collapse.csv", r2)
     # polished, presentation-quality figures in Korean (overwrite the plain built-ins)
     import importlib.util, pathlib
     spec=importlib.util.spec_from_file_location("render_figures_ko", pathlib.Path(__file__).parent/"render_figures_ko.py")
