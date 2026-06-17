@@ -87,6 +87,23 @@ Demo-coded data를 이용한 backdoor adjustment 결과는 다음과 같다.
 이 결과는 신문 프레이밍 안에서 질서 통제 경로가 더 즉각적이고 표면적으로 강하게 나타났음을 보여준다.
 개선 경로는 단순 비교에서는 거의 보이지 않지만, 신문 맥락 Z를 보정한 뒤 약하게 나타난다.
 
+> **주의:** 위 수치는 합성(demo) 데이터에서 계산된 *방법 시연*이며 역사적 효과가 아니다.
+
+### 실제 corpus 관찰 (rung 1, 합성 아님)
+
+합성 데이터에만 의존하지 않도록, 실제 26개 추출 자체에서 관찰되는 연관도 별도로 기록하였다
+(`outputs/real_corpus_cooccurrence.csv`, `scripts/corpus_cooccurrence.py`).
+
+| Context Z (실제 추출) | Y1(개선) 단위 | Y2(통제) 단위 | lean |
+| ------------------- | ---------: | ---------: | ---- |
+| order_focused       |          0 |          2 | 통제 |
+| mixed               |          7 |          3 | 개선 |
+| institutional       |          2 |          0 | 개선 |
+
+실제 corpus에서는 후반 보도일수록 개선 프레임(Y1)이 오히려 더 많이 나타난다.
+즉 "통제가 더 강하다"는 인상은 (a) 합성 데이터 설계와 (b) 단일 order_focused 신문 호에서 주로 기인한다.
+이 대비 자체가 *correlation*과 *demo-adjusted 시연*을 구분해 보여 주는 장치이다.
+
 따라서 본 프로젝트의 결론은 다음과 같다.
 
 > 실제 역사적 효과는 이 자료만으로 확정할 수 없다.
@@ -132,19 +149,22 @@ Demo-coded data를 이용한 backdoor adjustment 결과는 다음과 같다.
 주요 결과는 다음 명령으로 재현할 수 있다.
 
 ```bash
+python scripts/clean_ocr.py
 python scripts/issue_context.py
 python scripts/make_demo_data.py
+python scripts/corpus_cooccurrence.py
 python scripts/build_pipeline.py
 ```
 
 각 스크립트의 역할은 다음과 같다.
 
-| Script                    | Role                                                 |
-| ------------------------- | ---------------------------------------------------- |
-| scripts/issue_context.py  | 신문 호 단위 맥락 Z를 보조적으로 계산                               |
-| scripts/make_demo_data.py | demo-coded data 생성                                   |
-| scripts/build_pipeline.py | 추출 결과, KG, DAG, demo adjustment, figures, outputs 생성 |
-| scripts/clean_ocr.py      | OCR 정제 및 cleaning log 생성                             |
+| Script                        | Role                                                 |
+| ----------------------------- | ---------------------------------------------------- |
+| scripts/clean_ocr.py          | OCR 정제 및 cleaning log 생성                             |
+| scripts/issue_context.py      | 신문 호 단위 맥락 Z를 보조적으로 계산 (3단계 vs 2단계 진단 포함)            |
+| scripts/make_demo_data.py     | demo-coded data 생성                                   |
+| scripts/corpus_cooccurrence.py | 실제 26개 추출의 rung-1 연관 (합성 아님) 계산                       |
+| scripts/build_pipeline.py     | 추출 결과, KG(+entity layer), DAG, demo adjustment, 민감도, figures, outputs 생성 |
 
 ---
 
@@ -158,6 +178,19 @@ python scripts/build_pipeline.py
 * 모든 인용문이 실제 OCR 원문에 존재하는지는 `outputs/quote_verification_report.csv`에서 확인할 수 있다.
 * Knowledge Graph와 DAG는 `graph/` 폴더에서 확인할 수 있다.
 * Demo adjustment와 sensitivity 결과는 `outputs/` 폴더에서 확인할 수 있다.
+* 실제 corpus의 rung-1 연관은 `outputs/real_corpus_cooccurrence.csv`에서 확인할 수 있다.
+* Entity/event layer(Person·Organization·Place·Event)는 `data/curated/entities.csv`로 코딩하여 KG에 포함하였다.
+
+---
+
+## 7-1. Limitations
+
+본 프로젝트는 다음 한계를 명시한다.
+
+* **합성 데이터의 성격.** demo adjustment 수치(+0.101, +0.121)는 연구자가 corpus 인상에 맞추어 설계한 160개 합성 단위에서 나온 *방법 시연*이며, 실제 역사적 ATE가 아니다. 합성에만 의존하지 않도록 실제 추출 기반 rung-1 연관(`real_corpus_cooccurrence.csv`)을 함께 제시한다.
+* **혼란변수 Z의 두께.** `issue_context.py`의 strike-proximal 측정에서 데이터가 실제로 지지하는 분할은 `order_focused`(1개 호) vs `reform_leaning`(나머지)의 2단계이며, `mixed`/`institutional` 구분은 상당 부분 수작업 판단이다. 이에 2단계 Z로 collapse한 robustness(`sensitivity_Z_collapse.csv`)를 추가하였고, 효과의 부호는 유지된다(Y1 +0.08, Y2 +0.138).
+* **신문 정체성·시점과의 교란.** `order_focused` 층위는 전적으로 The Evening Standard 1912-01-15 단일 호이고, 후반의 개선 프레임은 주로 Daily Kennebec Journal에서 나온다. 따라서 "초기 통제 → 후기 개선"이라는 시간적 서사는 신문 정체성·시점과 분리되지 않는다.
+* **코딩되지 않은 호.** iss003(1912-02-09)은 corpus·정제 단계에는 포함되지만 명확한 프레이밍 단위를 추출하지 못해 추출 0건이다(Z 맥락 참고용으로만 유지).
 
 ---
 

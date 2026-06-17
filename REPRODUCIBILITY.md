@@ -40,6 +40,7 @@ data/cleaned/
 python scripts/clean_ocr.py
 python scripts/issue_context.py
 python scripts/make_demo_data.py
+python scripts/corpus_cooccurrence.py
 python scripts/build_pipeline.py
 ```
 
@@ -48,9 +49,10 @@ python scripts/build_pipeline.py
 | Script                      | Description                                                                   |
 | --------------------------- | ----------------------------------------------------------------------------- |
 | `scripts/clean_ocr.py`      | 원문 OCR을 정제하고 cleaning log를 생성한다.                                              |
-| `scripts/issue_context.py`  | 신문 호 단위 맥락 변수 Z를 보조적으로 계산한다.                                                  |
+| `scripts/issue_context.py`  | 신문 호 단위 맥락 변수 Z를 보조적으로 계산한다(3단계 배정 vs 데이터 기반 2단계 진단).                          |
 | `scripts/make_demo_data.py` | corpus 관찰에 근거한 demo-coded data를 생성한다.                                         |
-| `scripts/build_pipeline.py` | 추출 결과, Knowledge Graph, Causal DAG, demo adjustment, 민감도 분석, figure 파일을 생성한다. |
+| `scripts/corpus_cooccurrence.py` | 실제 26개 추출의 rung-1 연관(합성 아님)을 계산한다.                                          |
+| `scripts/build_pipeline.py` | 추출 결과, Knowledge Graph(+entity layer), Causal DAG, demo adjustment, 민감도 분석, figure 파일을 생성한다. |
 
 원본 ALTO XML에서 OCR 텍스트를 다시 추출해야 하는 경우에만 다음 스크립트를 사용할 수 있다.
 
@@ -136,6 +138,14 @@ data/curated/issue_context_features.csv
 신문 호 전체의 단순 키워드 카운트는 신문 간 차이를 충분히 구분하지 못했다.
 반면 Lawrence Strike 언급 주변 어휘에서는 `order_focused` 맥락이 더 분명하게 확인되었다.
 따라서 Z는 완전히 정밀한 측정변수라기보다, 원문 기사와 어휘 근거를 바탕으로 한 투명한 휴리스틱 변수로 해석해야 한다.
+
+strike-proximal 측정에서 데이터가 실제로 지지하는 분할은 `order_focused` vs `reform_leaning`의 2단계이며,
+`mixed`/`institutional`의 세부 구분은 상당 부분 수작업 판단이다(8개 중 7개 호에서 데이터 기반 라벨과 배정 라벨이 다름).
+이에 Z를 2단계로 collapse한 robustness를 `outputs/sensitivity_Z_collapse.csv`에 추가하였으며, 효과의 부호는 유지된다(Y1 +0.08, Y2 +0.138).
+
+합성 데이터에 대한 의존을 줄이기 위해, 실제 26개 추출에서 직접 관찰되는 rung-1 연관은
+`outputs/real_corpus_cooccurrence.csv`(`scripts/corpus_cooccurrence.py`)에 별도로 기록하였다.
+이는 보정되지 않은 서술적(descriptive) 연관이며 인과도, 역사적 효과도 아니다.
 
 ---
 
