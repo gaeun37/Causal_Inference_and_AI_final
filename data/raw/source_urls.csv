@@ -1,0 +1,9 @@
+issue_id,date,newspaper,place,lccn,edition,pages_downloaded,strike_pages,context_Z,source_url,download_method
+iss001,1912-01-15,The Evening Standard,Ogden City UT,sn85058397,ed-1,8,"1,3",order_focused,https://www.loc.gov/resource/sn85058397/1912-01-15/ed-1/?st=text,LOC ALTO XML (full issue)
+iss002,1912-01-22,Daily Kennebec Journal,Augusta ME,sn82014248,ed-1,10,"1,4,10",mixed,https://www.loc.gov/resource/sn82014248/1912-01-22/ed-1/?st=text,LOC ALTO XML (full issue)
+iss003,1912-02-09,Daily Kennebec Journal,Augusta ME,sn82014248,ed-1,10,"1,10",mixed,https://www.loc.gov/resource/sn82014248/1912-02-09/ed-1/?st=text,LOC ALTO XML (full issue)
+iss004,1912-02-27,The Washington Times,Washington DC,sn84026749,ed-1,16,"1,11",institutional,https://www.loc.gov/resource/sn84026749/1912-02-27/ed-1/?st=text,LOC ALTO XML (full issue)
+iss005,1912-02-27,Daily Kennebec Journal,Augusta ME,sn82014248,ed-1,12,"1,12",mixed,https://www.loc.gov/resource/sn82014248/1912-02-27/ed-1/?st=text,LOC ALTO XML (full issue)
+iss006,1912-02-28,Daily Kennebec Journal,Augusta ME,sn82014248,ed-1,12,"1,4",mixed,https://www.loc.gov/resource/sn82014248/1912-02-28/ed-1/?st=text,LOC ALTO XML (full issue)
+iss007,1912-03-08,Daily Kennebec Journal,Augusta ME,sn82014248,ed-1,12,"1,12",mixed,https://www.loc.gov/resource/sn82014248/1912-03-08/ed-1/?st=text,LOC ALTO XML (full issue)
+iss008,1912-03-15,Daily Kennebec Journal,Augusta ME,sn82014248,ed-1,10,"1,10",mixed,https://www.loc.gov/resource/sn82014248/1912-03-15/ed-1/?st=text,LOC ALTO XML (full issue)
