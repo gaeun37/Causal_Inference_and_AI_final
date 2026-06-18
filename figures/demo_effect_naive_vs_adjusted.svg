@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="620" viewBox="0 0 1050 620">
+<rect x="0" y="0" width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:Arial, Helvetica, sans-serif;} .tiny{font-size:10px;} .small{font-size:12px;} .label{font-size:13px;font-weight:600;} .title{font-size:24px;font-weight:700;} .subtitle{font-size:14px;fill:#555;} .legend{font-size:12px;fill:#333;}</style>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#777"/></marker></defs>
+<text x="40" y="44" class="title" fill="#1f2937">Naive vs adjusted demo effect</text>
+<text x="40" y="68" class="subtitle">신문 맥락 Z를 보정하기 전과 후의 framing effect 비교</text>
+<line x1="90" y1="510.0" x2="990" y2="510.0" stroke="#555" stroke-width="1.2"/>
+<line x1="90" y1="510.0" x2="990" y2="510.0" stroke="#eee" stroke-width="1"/>
+<text x="78" y="514.0" text-anchor="end" font-size="11" fill="#555">0.00</text>
+<line x1="90" y1="412.5" x2="990" y2="412.5" stroke="#eee" stroke-width="1"/>
+<text x="78" y="416.5" text-anchor="end" font-size="11" fill="#555">0.29</text>
+<line x1="90" y1="315.0" x2="990" y2="315.0" stroke="#eee" stroke-width="1"/>
+<text x="78" y="319.0" text-anchor="end" font-size="11" fill="#555">0.57</text>
+<line x1="90" y1="217.5" x2="990" y2="217.5" stroke="#eee" stroke-width="1"/>
+<text x="78" y="221.5" text-anchor="end" font-size="11" fill="#555">0.86</text>
+<line x1="90" y1="120.0" x2="990" y2="120.0" stroke="#eee" stroke-width="1"/>
+<text x="78" y="124.0" text-anchor="end" font-size="11" fill="#555">1.15</text>
+<rect x="171.0" y="502.5" width="118.1" height="7.5" rx="4" fill="#79A7D3" opacity="0.90"/>
+<text x="230.0" y="495.5" text-anchor="middle" font-size="10" fill="#333">+0.022</text>
+<rect x="315.0" y="475.7" width="118.1" height="34.3" rx="4" fill="#F4A261" opacity="0.90"/>
+<text x="374.0" y="468.7" text-anchor="middle" font-size="10" fill="#333">+0.101</text>
+<text x="315.0" y="548" text-anchor="middle" font-size="12" fill="#333">Y1_improvement_response</text>
+<rect x="621.0" y="443.9" width="118.1" height="66.1" rx="4" fill="#79A7D3" opacity="0.90"/>
+<text x="680.0" y="436.9" text-anchor="middle" font-size="10" fill="#333">+0.195</text>
+<rect x="765.0" y="469.0" width="118.1" height="41.0" rx="4" fill="#F4A261" opacity="0.90"/>
+<text x="824.0" y="462.0" text-anchor="middle" font-size="10" fill="#333">+0.121</text>
+<text x="765.0" y="548" text-anchor="middle" font-size="12" fill="#333">Y2_order_control_response</text>
+<rect x="90" y="573" width="14" height="14" rx="3" fill="#79A7D3"/>
+<text x="111" y="585" class="legend">Naive</text>
+<rect x="270" y="573" width="14" height="14" rx="3" fill="#F4A261"/>
+<text x="291" y="585" class="legend">Adjusted</text>
+<text x="90" y="602" font-size="11" fill="#666">Y-axis: effect size</text>
+</svg>

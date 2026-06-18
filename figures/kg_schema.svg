@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+<rect x="0" y="0" width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:Arial, Helvetica, sans-serif;} .tiny{font-size:10px;} .small{font-size:12px;} .label{font-size:13px;font-weight:600;} .title{font-size:24px;font-weight:700;} .subtitle{font-size:14px;fill:#555;} .legend{font-size:12px;fill:#333;}</style>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#777"/></marker></defs>
+<text x="40" y="44" class="title" fill="#1f2937">Knowledge Graph 스키마</text>
+<text x="40" y="68" class="subtitle">원문 근거와 분석자가 붙인 프레이밍 해석을 분리해서 추적한다</text>
+<rect x="80.0" y="210.0" width="130.0" height="52.0" rx="10" fill="#9BD3F5" stroke="#555" stroke-width="1.2"/>
+<text x="145.0" y="240.0" text-anchor="middle" font-size="12" font-weight="600" fill="#222">Issue</text>
+<rect x="280.0" y="210.0" width="150.0" height="52.0" rx="10" fill="#B7E4F9" stroke="#555" stroke-width="1.2"/>
+<text x="355.0" y="240.0" text-anchor="middle" font-size="12" font-weight="600" fill="#222">Article</text>
+<rect x="520.0" y="210.0" width="150.0" height="52.0" rx="10" fill="#CAB6FF" stroke="#555" stroke-width="1.2"/>
+<text x="595.0" y="240.0" text-anchor="middle" font-size="12" font-weight="600" fill="#222">Extraction</text>
+<rect x="740.0" y="270.0" width="170.0" height="52.0" rx="10" fill="#BFE6B8" stroke="#555" stroke-width="1.2"/>
+<text x="825.0" y="300.0" text-anchor="middle" font-size="12" font-weight="600" fill="#222">SupportingQuote</text>
+<rect x="735.0" y="150.0" width="170.0" height="52.0" rx="10" fill="#FFD1E0" stroke="#555" stroke-width="1.2"/>
+<text x="820.0" y="180.0" text-anchor="middle" font-size="12" font-weight="600" fill="#222">FramingClaim</text>
+<rect x="735.0" y="70.0" width="210.0" height="52.0" rx="10" fill="#FFB6C7" stroke="#555" stroke-width="1.2"/>
+<text x="840.0" y="100.0" text-anchor="middle" font-size="12" font-weight="600" fill="#222">AssertedCausalClaim</text>
+<rect x="735.0" y="360.0" width="190.0" height="52.0" rx="10" fill="#F4B183" stroke="#555" stroke-width="1.2"/>
+<text x="830.0" y="390.0" text-anchor="middle" font-size="12" font-weight="600" fill="#222">AnalystAssumption</text>
+<rect x="990.0" y="210.0" width="135.0" height="52.0" rx="10" fill="#D9D9D9" stroke="#555" stroke-width="1.2"/>
+<text x="1057.5" y="240.0" text-anchor="middle" font-size="12" font-weight="600" fill="#222">SourceURL</text>
+<line x1="200.0" y1="236.0" x2="300.0" y2="236.0" stroke="#555555" stroke-width="1.7" opacity="0.85" marker-end="url(#arrow)"/>
+<text x="250.0" y="228.0" text-anchor="middle" font-size="10" fill="#555">CONTAINS</text>
+<line x1="410.0" y1="236.0" x2="540.0" y2="236.0" stroke="#777777" stroke-width="1.7" opacity="0.85" marker-end="url(#arrow)"/>
+<text x="475.0" y="228.0" text-anchor="middle" font-size="10" fill="#555">HAS_EXTRACTION</text>
+<line x1="595.0" y1="236.0" x2="770.0" y2="296.0" stroke="#3B8F3B" stroke-width="1.7" opacity="0.85" marker-end="url(#arrow)"/>
+<text x="710.0" y="258.0" text-anchor="middle" font-size="10" fill="#555">SUPPORTED_BY</text>
+<line x1="595.0" y1="236.0" x2="745.0" y2="176.0" stroke="#7B61FF" stroke-width="1.7" opacity="0.85" marker-end="url(#arrow)"/>
+<text x="707.5" y="198.0" text-anchor="middle" font-size="10" fill="#555">REPRESENTED_AS</text>
+<line x1="595.0" y1="236.0" x2="765.0" y2="96.0" stroke="#777" stroke-width="1.7" opacity="0.85" marker-end="url(#arrow)"/>
+<text x="717.5" y="158.0" text-anchor="middle" font-size="10" fill="#555">ASSERTED</text>
+<line x1="595.0" y1="236.0" x2="755.0" y2="386.0" stroke="#777" stroke-width="1.7" opacity="0.85" marker-end="url(#arrow)"/>
+<text x="712.5" y="303.0" text-anchor="middle" font-size="10" fill="#555">ANALYST MODEL</text>
+<line x1="595.0" y1="236.0" x2="1002.5" y2="236.0" stroke="#999999" stroke-width="1.7" opacity="0.85" marker-end="url(#arrow)"/>
+<text x="826.2" y="228.0" text-anchor="middle" font-size="10" fill="#555">DERIVED_FROM</text>
+<text x="80" y="480" class="subtitle">이 그림은 설계 스키마이다. 실제 nodes/edges를 렌더링한 그래프는 knowledge_graph_actual_*.svg 파일로 따로 제공한다.</text>
+</svg>
