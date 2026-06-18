@@ -1,3 +1,3 @@
-outcome,naive_difference,adjusted_demo_effect,interpretation
-Y1_improvement_response,0.022,0.101,Z adjustment reveals a stronger improvement path
+outcome,naive_difference,adjusted_effect,interpretation
+Y1_improvement_response,0.022,0.101,Z adjustment makes the improvement path more visible
 Y2_order_control_response,0.195,0.121,Z adjustment reduces the apparent order-control path

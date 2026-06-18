@@ -1,0 +1,4 @@
+setting,Y1_improvement_effect,Y2_order_control_effect
+baseline_adjusted,0.101,0.121
+observed_issue_share,0.124,0.116
+Z_collapsed_2level,0.080,0.138
