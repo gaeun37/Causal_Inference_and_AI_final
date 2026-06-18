@@ -1,7 +1,7 @@
-Z_context,X_protest_pressure,n_units,Y1_improvement_count,Y1_rate,Y2_order_control_count,Y2_rate
-order_focused,1,30,8,0.267,24,0.8
-order_focused,0,10,3,0.3,6,0.6
-mixed,1,44,26,0.591,22,0.5
+Z_context,X,n,Y1_count,Y1_rate,Y2_count,Y2_rate
+order_focused,1,30,8,0.267,24,0.800
+order_focused,0,10,3,0.300,6,0.600
+mixed,1,44,26,0.591,22,0.500
 mixed,0,36,16,0.444,14,0.389
 institutional,1,16,13,0.813,5,0.313
-institutional,0,24,16,0.667,6,0.25
+institutional,0,24,16,0.667,6,0.250
